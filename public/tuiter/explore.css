@@ -1,0 +1,103 @@
+.wd-color-and-padding-constants {
+  margin-left: 16px;
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+}
+/*Individual elements:*/
+
+.wd-search-bar {
+  width: 80%;
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
+.wd-settings {
+  float: right;
+  font-size: xx-large;
+  margin-top: 5px;
+  margin-right: 12px;
+  color: rgb(29, 161, 242);
+  text-decoration: none;
+}
+
+/*List of links*/
+
+.wd-links {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.wd-link {
+  width: 10%;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.wd-link-text {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(110, 118, 125);
+}
+
+.wd-highlighted-link-text {
+  color: rgb(29, 161, 242);
+  border-bottom-color: rgb(110, 118, 125);
+  text-underline-offset: 12px;
+  text-decoration-thickness: 4px;
+}
+
+/*Horizontal divider and ruler*/
+.wd-horizontal-ruler {
+  border: 1px solid rgb(110, 118, 125);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.wd-post-divider {
+  border: 0.5px thin darkgrey;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*All posts*/
+.wd-posts {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+.wd-topic-and-tuit-text {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wd-title-text {
+  color: white;
+}
+
+.wd-author-text {
+  color: white;
+}
+
+.wd-title-image-padding {
+  margin-bottom: 75px;
+}
+
+.wd-topic-text {
+  color: lightgray;
+}
+
+.wd-post-image {
+  float: right;
+  margin-right: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}

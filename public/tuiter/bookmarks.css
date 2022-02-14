@@ -1,0 +1,102 @@
+.wd-color-and-padding-constants {
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+  margin-left: 16px;
+}
+
+/*Individual Components*/
+.wd-bookmarks-title-text {
+  margin-top: 12px;
+  color: white;
+  font-size: 20px;
+}
+
+.wd-bookmarks-user-text {
+  color: lightgray;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.wd-border-line {
+  border: 1px solid lightgray;
+}
+
+.wd-avatar-image {
+  float: left;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.wd-post-author {
+  margin-top: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+.wd-post-handle {
+  margin-top: 12px;
+  color: lightgray;
+  font-size: 15px;
+}
+
+.wd-post-content {
+  color: white;
+  font-size: 15px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  margin-left: 60px;
+  max-width: 506px;
+}
+
+.wd-post-image {
+  margin-left: 60px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 504px;
+  height: 264px;
+}
+
+.wd-post-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.wd-image-format {
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid lightgray;
+  margin: 0;
+  margin-left: 60px;
+}
+
+.wd-image-title {
+  color: white;
+}
+
+.wd-image-caption {
+  color: lightgray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.wd-symbol {
+  float: left;
+  margin-top: 12px;
+  margin-left: 60px;
+  margin-right: 12px;
+  color: rgb(47, 51, 54);
+  text-decoration: none;
+}
+
+.wd-symbol-data {
+  color: rgb(47, 51, 54);
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.wd-heart {
+  color: red;
+}
