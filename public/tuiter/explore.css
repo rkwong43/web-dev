@@ -1,33 +1,101 @@
 .wd-color-and-padding-constants {
-  margin-left: 16px;
-  background-color: black;
+  background-color: white;
   border-color: rgb(47, 51, 54);
 }
+
 /*Individual elements:*/
 
+.wd-float-left {
+  float: left;
+}
+
+.wd-bold-text {
+  font-weight: bold;
+}
+
+.wd-small-text {
+  font-size: small;
+}
+
+.wd-tweet-button {
+  border-radius: 30px;
+}
+
+.wd-follow-button {
+  float: right;
+  clear: none;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+
+.wd-avatar-image {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.wd-center-text {
+  text-align: center;
+}
+
 .wd-search-bar {
-  width: 80%;
-  background-color: darkgray;
+  width: 90%;
+  background-color: white;
   border-radius: 20px;
-  padding: 10px;
-  margin-top: 10px;
-  margin-right: 60px;
+  border-width: 1px;
+  border-color: rgb(110, 118, 125);
+  float: left;
 }
 
 .wd-settings {
   float: right;
-  font-size: xx-large;
-  margin-top: 5px;
-  margin-right: 12px;
+  font-size: large;
   color: rgb(29, 161, 242);
   text-decoration: none;
+}
+
+.wd-clear {
+  clear: both;
+}
+
+.wd-image-text {
+  top: auto;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  bottom: 0;
+}
+
+.wd-image-box {
+  width: 100%;
+  position: relative;
+}
+
+.wd-faded-text {
+  color: rgb(110, 118, 125);
+}
+
+.wd-card-box {
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.wd-clear-bold {
+  font-weight: normal;
+}
+
+.wd-card-img {
+  float: right;
+  width: 64px;
+  height: 64px;
+  border-radius: 10%;
 }
 
 /*List of links*/
 
 .wd-links {
-  list-style-type: none;
-  padding-left: 0px;
+  border-color: grey;
 }
 
 .wd-link {
