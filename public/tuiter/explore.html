@@ -1,101 +1,305 @@
 <!---->
 <head>
+  <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../vendors/fontawesome/css/all.css" rel="stylesheet" />
   <link href="explore.css" rel="stylesheet" />
 </head>
 
 <body class="wd-color-and-padding-constants">
-  <!--Search bar-->
-  <input
-    class="wd-search-bar"
-    id="usernameField"
-    type="text"
-    placeholder="Search Tuiter"
-  />
-  <!--Settings-->
-  <a class="wd-settings" href="explore-settings.html"> &#x2699; </a>
+  <div class="container mt-2">
+    <!--Responsive grid-->
+    <div class="row">
+      <div class="col-2 d-none d-xl-block d-xxl-block">
+        <!--Leftmost column, expanded form-->
+        <ul class="list-group">
+          <li class="list-group-item disabled">
+            <i class="fa fa-kiwi-bird" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-home" style="color: black"></i> Home
+          </li>
+          <li class="list-group-item active">
+            <i class="fa fa-hashtag" style="color: black"></i> Explore
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-bell" style="color: black"></i> Notifications
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-envelope" style="color: black"></i> Messages
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-bookmark" style="color: black"></i> Bookmarks
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-list" style="color: black"></i> Lists
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-user" style="color: black"></i> Profile
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-h" style="color: black"></i> More
+          </li>
 
-  <!--Links-->
-  <br />
-  <ul class="wd-links">
-    <li class="wd-link">
-      <a class="wd-highlighted-link-text" href="explore.html">For you</a>
-    </li>
-    <li class="wd-link">
-      <a class="wd-link-text" href="explore.html">Trending</a>
-    </li>
-    <li class="wd-link">
-      <a class="wd-link-text" href="explore.html">COVID-19</a>
-    </li>
-    <li class="wd-link">
-      <a class="wd-link-text" href="explore.html">News</a>
-    </li>
-    <li class="wd-link">
-      <a class="wd-link-text" href="explore.html">Sports</a>
-    </li>
-    <li class="wd-link">
-      <a class="wd-link-text" href="explore.html">Entertainment</a>
-    </li>
-  </ul>
-
-  <!--The horizontal line and block -->
-  <hr class="wd-horizontal-ruler" />
-
-  <!--Posts-->
-  <ul class="wd-posts">
-    <li>
-      <div class="wd-topic-and-tuit-text">Trending in Science</div>
-      <div class="wd-title-text">Starship</div>
-      <div class="wd-topic-and-tuit-text">55.5k Tuits</div>
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-    <li>
-      <div class="wd-topic-and-tuit-text">Sports - Trending</div>
-      <div class="wd-title-text">Joe Rogan</div>
-      <div class="wd-topic-and-tuit-text">5,218 Tuits</div>
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-    <li>
-      <img
-        class="wd-post-image"
-        src="https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3ODc3NjU3MDEzMTM1MDcx/this-day-in-history-0611980---cnn-launches.jpg"
-      />
-      <div class="wd-topic-and-tuit-text">
-        <span class="wd-author-text">The New York Times</span> - Yesterday
-      </div>
-      <div class="wd-title-text wd-title-image-padding">
-        CNN's Cuomo conundrum: A star anchor with a brother in trouble
-      </div>
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-    <li>
-      <img
-        class="wd-post-image"
-        src="https://i0.wp.com/developersbreach.com/wp-content/uploads/2020/08/cnn_banner.png?fit=1400%2C658&ssl=1"
-      />
-      <div class="wd-topic-and-tuit-text">
-        <span class="wd-author-text">Another Author</span> - Today
-      </div>
-      <div class="wd-title-text wd-title-image-padding">
-        Sed ornare accumsan dolor sed fermentum
+          <button
+            type="button"
+            class="btn btn-primary btn-sm wd-follow-button wd-small-text mt-1"
+          >
+            Tweet
+          </button>
+        </ul>
       </div>
 
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-    <li>
-      <div class="wd-topic-and-tuit-text">
-        <span class="wd-topic-text">COVID-19</span> - LIVE
+      <div class="col-2 d-xl-none d-xxl-none">
+        <!--Leftmost column, icon form-->
+        <ul class="list-group">
+          <li class="list-group-item disabled">
+            <i class="fa fa-kiwi-bird wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-home wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item active">
+            <i class="fa fa-hashtag wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-bell wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-envelope wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-bookmark wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-list wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-user wd-center-text" style="color: black"></i>
+          </li>
+          <li class="list-group-item">
+            <i class="fa fa-ellipsis-h wd-center-text" style="color: black"></i>
+          </li>
+          <button
+            type="button"
+            class="btn btn-primary btn-sm wd-follow-button wd-small-text mt-1"
+          >
+            Tweet
+          </button>
+        </ul>
       </div>
-      <div class="wd-title-text">
-        COVID-19: News and updates for Massachusetts
+
+      <div class="col-9 col-lg-7">
+        <!--Middle column-->
+        <!--Search bar-->
+        <div>
+          <i class="fa fa-search position-absolute pt-1 ps-2"></i>
+          <input
+            class="wd-search-bar ps-5"
+            id="usernameField"
+            type="text"
+            placeholder="Search Twitter"
+          />
+          <!--Settings-->
+          <a class="wd-settings" href="explore-settings.html">
+            <i class="fa fa-cog"></i>
+          </a>
+        </div>
+
+        <!--Links-->
+        <ul class="nav nav-tabs wd-clear pt-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="for-you.html">For you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trending.html">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sports.html">Sports</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="entertainment.html">Entertainment</a>
+          </li>
+        </ul>
+        <!--Large image-->
+        <div class="wd-image-box">
+          <span class="wd-image-text position-absolute ms-1"
+            >SpaceX's Starship</span
+          >
+          <img
+            class="mt-2"
+            style="width: 100%"
+            src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+          />
+        </div>
+
+        <!--Other cards-->
+        <div class="card-body wd-card-box">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png"
+            class="wd-card-img"
+          />
+          <p class="card-text wd-faded-text wd-small-text m-0">
+            Web Development
+          </p>
+          <p class="card-text wd-bold-text wd-small-text m-0">
+            ReactJS
+            <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            <span class="card-text wd-faded-text wd-small-text wd-clear-bold"
+              >- 2h</span
+            >
+          </p>
+          <p class="card-text wd-small-text wd-bold-text m-0">
+            React.js is a component based front end library that makes it very
+            easy to build Single Page Applications or SPAs
+          </p>
+        </div>
+        <div class="card-body wd-card-box">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            class="wd-card-img"
+          />
+          <p class="card-text wd-bold-text wd-small-text m-0">
+            JavaScript
+            <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            <span class="card-text wd-faded-text wd-small-text wd-clear-bold"
+              >- 2h</span
+            >
+          </p>
+          <p class="card-text wd-small-text wd-bold-text m-0">
+            JavaScript is a programming language that can run on browsers as
+            well as desktops
+          </p>
+          <p class="card-text wd-faded-text wd-small-text m-0">123K Tweets</p>
+        </div>
+        <div class="card-body wd-card-box">
+          <img
+            src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
+            class="wd-card-img"
+          />
+          <p class="card-text wd-faded-text wd-small-text m-0">
+            Web Development
+          </p>
+          <p class="card-text wd-bold-text wd-small-text m-0">jQuery</p>
+          <p class="card-text wd-faded-text wd-small-text m-0">123K Tweets</p>
+        </div>
+        <div class="card-body wd-card-box">
+          <img
+            src="https://media.istockphoto.com/vectors/nodejs-vector-logo-backend-programming-in-javascript-server-vector-id1195857274?k=20&m=1195857274&s=170667a&w=0&h=k8oHsv3ehrvhviozLlvhEjGHweiHU7hbBv7bHEkgUqc="
+            class="wd-card-img"
+          />
+          <p class="card-text wd-faded-text wd-small-text m-0">
+            Web Development
+          </p>
+          <p class="card-text wd-bold-text wd-small-text m-0">
+            NodeJS
+            <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            <span class="card-text wd-faded-text wd-small-text wd-clear-bold"
+              >- 2h</span
+            >
+          </p>
+          <p class="card-text wd-faded-text wd-small-text m-0">123K Tweets</p>
+        </div>
       </div>
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-    <li>
-      <div class="wd-topic-and-tuit-text">
-        <span class="wd-topic-text">Other Topic</span> - NOT LIVE
+
+      <div class="col-lg-3 d-none d-lg-block">
+        <!--Rightmost column-->
+        <ul class="list-group">
+          <li class="list-group-item wd-bold-text">Who to follow</li>
+          <li class="list-group-item">
+            <img
+              class="wd-avatar-image wd-float-left me-1"
+              src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/0a/8cd7f1b14344618b75142593bc7af8/JavaCupLogo800x800.png?auto=format%2Ccompress&dpr=1"
+            />
+            <span class="wd-bold-text wd-small-text">
+              Java
+              <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            </span>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm wd-follow-button wd-small-text"
+            >
+              Follow
+            </button>
+            <br />
+            <span class="wd-small-text">@Java</span>
+          </li>
+          <li class="list-group-item">
+            <img
+              class="wd-avatar-image wd-float-left me-1"
+              src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+            />
+            <span class="wd-bold-text wd-small-text">
+              Relativity Space
+              <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            </span>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm wd-follow-button wd-small-text"
+            >
+              Follow
+            </button>
+            <br />
+            <span class="wd-small-text">@relativityspace</span>
+          </li>
+          <li class="list-group-item">
+            <img
+              class="wd-avatar-image wd-float-left me-1"
+              src="https://cdn.dribbble.com/users/4032404/screenshots/10829807/virgin_galactic_concept_2_4x.png"
+            />
+            <span class="wd-bold-text wd-small-text">
+              Virgin Galactic
+              <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            </span>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm wd-follow-button wd-small-text"
+            >
+              Follow
+            </button>
+            <br />
+            <span class="wd-small-text">@virgingalactic</span>
+          </li>
+          <li class="list-group-item">
+            <img
+              class="wd-avatar-image wd-float-left me-1"
+              src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png"
+            />
+            <span class="wd-bold-text wd-small-text">
+              NASA
+              <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            </span>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm wd-follow-button wd-small-text"
+            >
+              Follow
+            </button>
+            <br />
+            <span class="wd-small-text">@NASA</span>
+          </li>
+          <li class="list-group-item">
+            <img
+              class="wd-avatar-image wd-float-left me-1"
+              src="data:image/png;base64,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"
+            />
+            <span class="wd-bold-text wd-small-text">
+              Tesla
+              <i class="fa fa-check-circle wd-bold-text wd-small-text"></i>
+            </span>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm wd-follow-button wd-small-text"
+            >
+              Follow
+            </button>
+            <br />
+            <span class="wd-small-text">@tesla</span>
+          </li>
+        </ul>
       </div>
-      <div class="wd-title-text">More Topics and News Here</div>
-      <hr class="wd-horizontal-ruler wd-post-divider" />
-    </li>
-  </ul>
+    </div>
+  </div>
 </body>
