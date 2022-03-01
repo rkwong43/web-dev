@@ -4,7 +4,7 @@ const PostSummaryItem = (item) => {
     <img
         src=${item.image}
         class="wd-card-img"
-    />ss
+    />
     <p class="card-text wd-faded-text wd-small-text m-0">
         ${item.topic}
     </p>
@@ -17,7 +17,9 @@ const PostSummaryItem = (item) => {
     <p class="card-text wd-small-text wd-bold-text m-0">
         ${item.title}
     </p>
-    <p class="card-text wd-faded-text wd-small-text m-0">${item.tweets} Tweets</p>
+    <p class="card-text wd-faded-text wd-small-text m-0">${
+      item.tweets ? item.tweets + " Tweets" : ""
+    }</p>
     </div>`;
 };
 export default PostSummaryItem;

@@ -3,7 +3,7 @@ import PostSummaryList from "../PostSummaryList/index.js";
 const ExploreComponent = () => {
   return `
         <div class="row">
-        <div>
+        <div class="mb-1">
             <i class="fa fa-search position-absolute pt-1 ps-2"></i>
             <input
             class="wd-search-bar ps-5"

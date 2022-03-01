@@ -6,7 +6,7 @@ const posts = [
     title:
       "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
     image:
-      "https://cdn.iconscout.com/icon/free/png-256/react-1543566-1306069.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
   },
   {
     topic: "",
