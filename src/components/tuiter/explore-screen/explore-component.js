@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../post-summary-list";
 
 const ExploreComponent = () => {
   return (
@@ -54,7 +54,7 @@ const ExploreComponent = () => {
           alt="Spaceship"
         />
         <span
-          className="fw-bold fs-4 ms-4 position-absolute bottom-0 start-0 top-50"
+          className="fw-bold fs-4 ms-4 position-absolute bottom-50 start-0 top-50"
           style={{ color: "white" }}
         >
           SpaceX's Starship

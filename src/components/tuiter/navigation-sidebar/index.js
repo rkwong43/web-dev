@@ -7,13 +7,16 @@ const NavigationSidebar = ({ active = "explore" }) => {
           {" "}
           <i className="fab fa-twitter"></i>
         </a>
-        <a className="list-group-item" href="/">
+        <a
+          className={`list-group-item {active === "home" ? "active" : ""}`}
+          href="/tuiter/"
+        >
           <i className="fa fa-home"></i> Home
         </a>
         <a
           className={`list-group-item
-        {active === "home" ? "active" : ""}`}
-          href="/"
+        {active === "explore" ? "active" : ""}`}
+          href="/tuiter/explore"
         >
           <i className="fa fa-hashtag"></i> Explore
         </a>
