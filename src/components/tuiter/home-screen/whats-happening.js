@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { createTuit } from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening] = useState("");
   const dispatch = useDispatch();
-  const tuitClickHandler = () => {
-    dispatch({ type: "create-tuit", tuit: whatsHappening });
-  };
+  const [newTuit, setNewTuit] = useState({ tuit: "New tuit" });
   return (
     <>
       <textarea
         className="form-control bg-black mb-1 text-muted border-bottom border-bottom-dark"
-        value={whatsHappening}
         placeholder="What's happening?"
-        onChange={(event) => setWhatsHappening(event.target.value)}
+        onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
       ></textarea>
       <a href="/">
         <i className="fa fa-solid fa-image fa-remove fa-pull-left"></i>
@@ -29,7 +26,7 @@ const WhatsHappening = () => {
       </a>
       <button
         className="btn btn-primary fa-pull-right rounded-pill"
-        onClick={tuitClickHandler}
+        onClick={() => createTuit(dispatch, newTuit)}
       >
         Tuit
       </button>
